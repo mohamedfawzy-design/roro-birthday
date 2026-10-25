@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17070d" />
+  <title>إلى رورو ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+</body>
+
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="music-control">
+    <button id="musicToggle" class="icon-button" aria-label="تشغيل أو إيقاف الموسيقى" title="الموسيقى">♫</button>
+  </div>
+
+  <main>
+    <section class="intro screen" id="intro">
+      <div class="intro-stars">✦　·　✧　·　✦</div>
+      <p class="eyebrow reveal">A LITTLE SOMETHING FOR YOU</p>
+      <h1 class="intro-title">رورو، فيه حاجة<br><span>مستنياكي…</span></h1>
+      <p class="intro-subtitle">خدي نفس عميق، و دوسي على القلب ❤️</p>
+      <button class="heart-button" id="openHeart" aria-label="افتحي المفاجأة">
+        <span class="heart-glow"></span><span class="heart-shape">♥</span>
+        <span class="heart-ring ring-one"></span><span class="heart-ring ring-two"></span>
+      </button>
+      <div class="tiny-note">MADE WITH CARE · JUST FOR YOU</div>
+      <div class="scroll-cue">انزلي براحتك <span>↓</span></div>
+    </section>
+
+    <div id="story" class="story hidden">
+      <section class="birthday section-wrap">
+        <div class="date-label"><span class="date-line"></span><span>26 / 10</span><span class="date-line"></span></div>
+        <p class="section-kicker">A DAY WORTH CELEBRATING</p>
+        <h2 class="birthday-heading">تاريخ مميز…<br><em>لأنك اتولدتي فيه</em></h2>
+        <div class="hero-photo photo-frame reveal-on-scroll">
+          <img src="image/1.jpeg" alt="صورة رورو الرئيسية" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-placeholder"><span>♡</span><strong>صورتك هنا يا رورو</strong><small>image/1.jpeg</small></div>
+          <div class="photo-corner corner-tl"></div><div class="photo-corner corner-br"></div>
+        </div>
+        <div class="main-message reveal-on-scroll">
+          <span class="quote-mark">“</span>
+          <p>برغم كل الزعل اللي ما بينا، مقدرش مفتكرش عيد ميلادك ولازم أهنيكي بيه.</p>
+          <span class="quote-mark closing">”</span>
+        </div>
+        <p class="soft-note">فيه أيام بتفضل مميزة… عشان أشخاص اتولدوا فيها.</p>
+        <a href="#memories" class="down-link">كمّلي الحكاية <span>↓</span></a>
+      </section>
+
+      <section class="memories section-wrap" id="memories">
+        <div class="section-heading reveal-on-scroll">
+          <p class="section-kicker">A FEW WORDS FOR YOU</p>
+          <h2>في يومك، أتمنالك…</h2>
+          <p>حاجات بسيطة من القلب، تستاهليها كلها.</p>
+        </div>
+
+        <article class="memory-row reveal-on-scroll">
+          <div class="memory-photo photo-frame">
+            <img src="image/2.jpeg" alt="صورة رورو الأولى" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>✧</span><strong>ضيفي صورة هنا</strong><small>image/2.jpeg</small></div>
+          </div>
+          <div class="memory-copy"><span class="memory-number">01 / A WISH</span><h3>سنة شبه قلبك</h3><p>أتمنالك سنة جديدة مليانة راحة بال، وضحكة طالعة من قلبك، وأيام تعوضك عن أي حاجة تعبتك. يا رب تلاقي فيها حاجات حلوة أكتر مما كنتِ بتتمني.</p><span class="little-heart">♥</span></div>
+        </article>
+
+        <article class="memory-row reverse reveal-on-scroll">
+          <div class="memory-photo photo-frame">
+            <img src="image/3.jpeg" alt="صورة رورو الثانية" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>✧</span><strong>ضيفي صورة هنا</strong><small>image/3.jpeg</small></div>
+          </div>
+          <div class="memory-copy"><span class="memory-number">02 / HAPPINESS</span><h3>فرحة من غير أسباب</h3><p>أتمنالك ضحك كتير، وناس صافية حواليكي، وأخبار حلوة تيجي في وقتها. أتمنى كل خطوة جاية تقربك من الحاجة اللي نفسك فيها، وتفكرك قد إيه إنتِ تستاهلي الخير.</p><span class="little-heart">♥</span></div>
+        </article>
+
+        <article class="memory-row reveal-on-scroll">
+          <div class="memory-photo photo-frame">
+            <img src="image/4.jpeg" alt="صورة رورو الثالثة" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-placeholder"><span>✧</span><strong>ضيفي صورة هنا</strong><small>image/4.jpeg</small></div>
+          </div>
+          <div class="memory-copy"><span class="memory-number">03 / GOOD THINGS</span><h3>كل اللي نفسك فيه</h3><p>يا رب السنة دي تكون بداية لحاجات كتير حلوة، وتحققي فيها اللي بتسعي له، وتفضلي دايمًا شايفة النور حتى في الأيام الصعبة. كل سنة وإنتِ بخير يا رورو، وعقبال سنين كتير حلوة.</p><span class="little-heart">♥</span></div>
+        </article>
+
+        <div class="wish-card reveal-on-scroll">
+          <div class="wish-ornament">✦</div>
+          <p>كل سنة وإنتِ طيبة يا رورو</p>
+          <h3>ويارب أيامك الجاية تكون أحنّ عليكي.</h3>
+          <div class="wish-ornament">✦</div>
+        </div>
+      </section>
+
+      <section class="secret-section section-wrap">
+        <div class="secret-stars">✧　✦　·　✧</div>
+        <p class="section-kicker">ONE LAST THING</p>
+        <h2>لسه فيه حاجة صغيرة…</h2>
+        <p class="secret-intro">رسالة ليكي إنتِ وبس.</p>
+        <button id="openLetter" class="envelope-button" aria-label="افتحي الرسالة السرية">
+          <span class="envelope-back"></span><span class="letter-peek">من قلبي ليكي…</span>
+          <span class="envelope-front"></span><span class="wax-seal">♥</span>
+        </button>
+        <p class="tap-hint">دوسي على الظرف عشان تفتحي الرسالة</p>
+        <div class="secret-message" id="secretMessage" aria-live="polite">
+          <div class="secret-paper">
+            <span class="paper-heart">♥</span>
+            <p class="paper-label">A PRIVATE NOTE FOR RORO</p>
+            <h3>رسالتي السرية ليكي</h3>
+            <p id="secretText"></p>
+            <span class="paper-signature">— من شخص بيتمنالك الخير</span>
+          </div>
+        </div>
+        <button id="replay" class="replay-button">نبدأ الحكاية من الأول ↺</button>
+      </section>
+      <footer>MADE WITH ♡ FOR RORO <span>26 · 10</span></footer>
+    </div>
+  </main>
+  <audio id="backgroundMusic" loop preload="none"><source src="music.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
